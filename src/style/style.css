@@ -24,3 +24,35 @@
     background: rgb(103,34,128);
     background: linear-gradient(145deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
 }
+
+/* Phones (up to 600px) */
+@media (max-width: 600px) {
+    .Logo{
+        
+        gap: 0.5rem;
+       
+    }
+
+    .Logo h1{
+    font-size: 1rem;
+  }
+  .Logo img{
+    height: 2rem;
+    padding: 0.5rem;
+  }
+
+  .header{
+    height: 4rem;
+    padding: .2rem;
+}
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+   
+}
+
+/* Desktops (1025px and above) */
+@media (min-width: 1025px) {
+  
+}
