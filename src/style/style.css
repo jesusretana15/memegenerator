@@ -1,0 +1,26 @@
+
+
+.Logo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: auto;
+    padding: 0;
+}
+
+.Logo img {
+    height: 4rem;
+    padding: 1rem;
+}
+
+.header{
+    height: 4rem;
+    padding: .625rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background: rgb(103,34,128);
+    background: linear-gradient(145deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+}
