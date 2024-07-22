@@ -37,7 +37,7 @@
     font-size: 1rem;
   }
   .Logo img{
-    height: 2rem;
+    height: 2.5rem;
     padding: 0.5rem;
   }
 
@@ -54,5 +54,9 @@
 
 /* Desktops (1025px and above) */
 @media (min-width: 1025px) {
-  
+    .memeImg{
+        height: 30px;
+        justify-self: center;
+        object-fit: contain;
+    }
 }
