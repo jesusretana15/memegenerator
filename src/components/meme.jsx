@@ -6,13 +6,25 @@ export default
 
 function Meme() {
 
-    const [memeImg, setImg] = useState('');
+    // const [memeImg, setImg] = useState('');
+
+    const [meme,updateMeme] = useState({ 
+        topText: "",
+        bottomText: "",
+        randomImage: "http://i.imgflip.com/1bij.jpg" }) 
+
+    const [allMemeImages,updateAllMeme] = useState(memesData) 
 
     function buttonClickHadler() {
-        const memesArray = memesData.data.memes
+        const memesArray = allMemeImages.data.memes
         const randomPosition = Math.floor(Math.random()*memesArray.length)
         const imgURL = memesArray[randomPosition].url
-        setImg(imgURL)
+        updateMeme((prev) => {
+            return {
+                ...prev,
+                randomImage: imgURL
+            }
+        })
         return 
     }
 
@@ -35,7 +47,7 @@ function Meme() {
                 Get a new meme image  🖼
                 </button>
             </form>
-            <img className="memeImg" src={memeImg} alt="" />
+            <img className="memeImg" src={meme.randomImage} alt="" />
         </section>
     )
 }

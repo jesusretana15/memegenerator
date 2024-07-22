@@ -56,16 +56,12 @@
 }
 
 .memeImg{
-    height: auto;
+    height: 70vh;
     justify-self: center;
     object-fit: contain;
 }
 
 
 @media (min-width: 1025px) {
-    .memeImg{
-        height: 70vh;
-        justify-self: center;
-        object-fit: contain;
-    }
+
 }
