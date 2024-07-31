@@ -55,8 +55,8 @@
     color: rgba(0, 0, 0, 0.411);
 }
 
-.memeImg{
-    height: 70vh;
+.meme--image{
+    height: 25vh;
     justify-self: center;
     object-fit: contain;
 }
